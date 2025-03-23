@@ -1,0 +1,9 @@
+ttest_assumptions
+- both datasets follow a normal distribution
+- equal variance in both sets of data
+- Observations are independent
+
+anova
+- all datasets follow a normal distibution
+- equal variance in all datasets
+- Observations within each group are independent
