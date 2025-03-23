@@ -1,0 +1,8 @@
+from statsmodels.formula.api import ols
+
+model = ols('growth(cm)~fertilizer + Watered_days',data=plant).fit()
+
+model.summary()
+#Large P-Value like; 0.531 for Prob(F-Statistic) will indicate the lack of support for covariance affecting the model.
+#The individual p-values of the independent variable and the covariate will determine the level of influence each has on the dependent variable;
+a large p-value means not a significant predictor of the dependent variable.
